@@ -35,10 +35,16 @@ public class LineComprasion {
         System.out.println("Length of the line is " + length2);
         Double line2 = Double.valueOf(length2);
 
-        if(line1.equals(line2)){
-            System.out.println("Both the lines are equals");
-        }else{
-            System.out.println("Both the lines are not equal");
+        if(line1.compareTo(line2) ==1){
+            System.out.println("line1 is greater than line2");
+        }else if(line1.compareTo(line2)==-1) {
+            System.out.println("line2 is greater than line1");
+        }
+        else{
+            System.out.println("Both the lines are equal");
+
+
+
         }
 
 
