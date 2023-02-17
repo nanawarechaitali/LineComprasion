@@ -2,8 +2,8 @@ package com.bridgelabz;
 import java.util.Random;
 
 public class LineComprasion {
-    public static void main(String[] args) {
-        System.out.println("Welcome to line Comprasion Computation Program on Master branch");
+    public static void lineComparisonInput() {
+
         Random random = new Random();
         int x1 = random.nextInt(10);
         int y1 = random.nextInt(10);
@@ -34,21 +34,21 @@ public class LineComprasion {
         double length2 = Math.sqrt(Math.pow(x4-x3,2)+Math.pow(y4-y3,2));
         System.out.println("Length of the line is " + length2);
         Double line2 = Double.valueOf(length2);
-
-        if(line1.compareTo(line2) ==1){
-            System.out.println("line1 is greater than line2");
-        }else if(line1.compareTo(line2)==-1) {
-            System.out.println("line2 is greater than line1");
+        lineComparing(line1 , line2);
+    }
+    public static void lineComparing(Double line1, Double line2){
+        if(line1.compareTo(line2)==1){
+            System.out.println("Line1 is greater than Line2");
+        }else if(line1.compareTo(line2)==-1){
+            System.out.println("Line2 is greater than line1");
         }
         else{
-            System.out.println("Both the lines are equal");
-
-
-
+            System.out.println("Both lines are equal");
         }
+    }
 
-
-
-
+    public static void main(String[] args) {
+        System.out.println("Line comparison computation program on Master Branch");
+        lineComparisonInput();
     }
 }
